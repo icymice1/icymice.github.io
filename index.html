@@ -6,9 +6,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>audio player</title>
 
-  <!-- Cloudflare Turnstile -->
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-
   <style>
     /* === Core layout / theme === */
     * { box-sizing: border-box; }
@@ -162,19 +159,7 @@
   </style>
 </head>
 <body>
-  <!-- LOCK overlay with Cloudflare Turnstile -->
-  <div id="locked">
-    <div class="lock-box" role="dialog" aria-modal="true" aria-label="Verification required">
-      <h2>🔒 Security Verification Required</h2>
-      <div class="grecaptcha-wrap">
-        <div class="cf-turnstile"
-             data-sitekey="0x4AAAAAACBaQ0cKPewOPFOg"
-             data-callback="unlockSite">
-        </div>
-      </div>
-    </div>
-  </div>
-
+  
   <!-- MAIN UI -->
   <div id="titleWrapper">
     <h1 id="mainTitle">DSD256 Music Player — Music Search</h1>
