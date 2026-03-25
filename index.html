@@ -377,13 +377,6 @@
       return `${m}:${s}`;
     }
 
-    searchBtn.addEventListener("click", () => {
-      const q = queryInput.value.trim();
-      if (!q) return;
-      const locked = document.getElementById("locked");
-      if (locked && locked.style.display !== "none") {
-        alert("Please verify with captcha first.");
-        return;
       }
       searchYouTube(q);
     });
